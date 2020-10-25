@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wellington luiz do nascimento</title>
+
+    <script>
+        function Teste(){
+            var today = new Date();
+            var firstDate = new Date("2014-01-01");
+            var diff = Math.abs(today.getTime() - firstDate.getTime());
+            var years = Math.ceil(diff / (1000 * 60 * 60 * 24 * 365));
+            document.write(years);
+        }
+    </script>
+
 </head>
 <body>
     <h1>Olá, meu nome é Wellington</h1>
-    <p>Sou analista desenvolvedor .NET</p>
+    <p>Sou analista desenvolvedor .NET por <script>Teste();</script> anos</p>
 </body>
 </html>
+
